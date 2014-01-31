@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Markup;
@@ -37,7 +38,7 @@ namespace ZooKeeperConsole
         private static string _configRoot;
         private static string _deviceLogNode;
         private static string _deviceCommandsNode;
-        
+        private static string _deviceFirmwareNode;
 
         private static List<ConfigSetting> _deviceConfiguration;
 
@@ -53,10 +54,13 @@ namespace ZooKeeperConsole
                     IWatcher newWatcher = new ConfigSettingWatcher();
                     
                     string decStr = GetStringFromByteArray(_zkClient.GetData(node, newWatcher, null));
+                    
                     dc.Value = decStr;
                     dc.SetNewWatch(newWatcher);
-                        
-                    Log("DeviceConfig  Setting (" + node + ") Updated");
+                    
+                    Console.WriteLine("New Value : " + decStr);
+
+                    Log("DeviceConfig  Setting (" + node + ") Updated to " + decStr);
 
                     PrintMainMenu();
 
@@ -90,6 +94,7 @@ namespace ZooKeeperConsole
             return true;
         }
 
+
         public static bool ActionCommand()
         {
             bool response = false;
@@ -101,12 +106,13 @@ namespace ZooKeeperConsole
                 Log("Command Received to do Nothing");
                 response = true;
             }
-            else if (commandAction == "UPDATE_FIRMWARE")
+            else if (commandAction.StartsWith("UPDATE_FIRMWARE"))
             {
-                // todo - get firmware filename here
-                Console.WriteLine("Firmware Update Avaliable");
-                Log("Command Received to Upgrade Firmware to v NUM using FILENAME");
-                response = true;
+                response = UpdateFirmware(commandAction.Substring(commandAction.LastIndexOf('_') + 1));
+            }
+            else if (commandAction == "REBOOT")
+            {
+                response = Reboot();
             }
             else
             {
@@ -228,12 +234,11 @@ namespace ZooKeeperConsole
         private static bool LoadIniFile(string filePath)
         {
             // Load The Ini File - Inifile Info http://www.tectite.com/fmhowto/inifile.php
-            const string iniFilePath = "D:\\cszk\\deviceConfig.ini";
-            IniFile iniFile = new IniFile(iniFilePath);
+            IniFile iniFile = new IniFile(filePath);
 
             if (iniFile == null)
             {
-                throw new Exception("Error : IniFile (" + iniFilePath + ") did not open");
+                throw new Exception("Error : IniFile (" + filePath + ") did not open");
             }
 
             // Device Info
@@ -263,6 +268,7 @@ namespace ZooKeeperConsole
             _configRoot = _deviceRoot + "/Config";
             _deviceLogNode = _deviceRoot + "/Log/LogMessage";
             _deviceCommandsNode = _deviceRoot + "/Command";
+            _deviceFirmwareNode = _root + "/Firmware";
         }
 
 
@@ -346,6 +352,41 @@ namespace ZooKeeperConsole
             _zkClient.SetData(_deviceCommandsNode, bytes, -1);
             IWatcher commandsWatcher = new DeviceCommandsWatcher();
             GetStringFromByteArray(_zkClient.GetData(_deviceCommandsNode, commandsWatcher, null));
+        }
+        
+
+        private static bool Reboot()
+        {
+            Console.WriteLine("Rebooting Device");
+            Log("Command reveived to reboot device");
+            PrintMainMenu();
+            return true;
+        }
+
+
+        private static bool UpdateFirmware(string updateVersion)
+        {
+            Console.WriteLine("Upgrading Firmware");
+            string message;
+            bool response = false;
+
+            try
+            {
+                string value =
+                    GetStringFromByteArray(_zkClient.GetData(_deviceFirmwareNode + "/" + updateVersion, null, null));
+
+                message = "Command Received to Upgrade Firmware to " + updateVersion + " using " + value;
+                response = true;
+            }
+            catch (Exception ex)
+            {
+                message= "Exception : Could not Update Firmware to " + _deviceFirmwareNode + "/" + updateVersion + ". Failed with Exception - " + ex.ToString();
+                response = false;
+            }
+
+            Console.WriteLine(message);
+            Log(message);
+            return response;
         }
 
     }

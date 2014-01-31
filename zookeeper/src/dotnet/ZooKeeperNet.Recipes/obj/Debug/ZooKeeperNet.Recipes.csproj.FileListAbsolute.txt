@@ -7,3 +7,12 @@ D:\cszk\zookeeper\src\dotnet\ZooKeeperNet.Recipes\bin\Debug\log4net.xml
 D:\cszk\zookeeper\src\dotnet\ZooKeeperNet.Recipes\obj\Debug\ZooKeeperNet.Recipes.csprojResolveAssemblyReference.cache
 D:\cszk\zookeeper\src\dotnet\ZooKeeperNet.Recipes\obj\Debug\ZooKeeperNet.Recipes.dll
 D:\cszk\zookeeper\src\dotnet\ZooKeeperNet.Recipes\obj\Debug\ZooKeeperNet.Recipes.pdb
+D:\repos\Hackathon-ZooKeeper\zookeeper\src\dotnet\ZooKeeperNet.Recipes\bin\Debug\ZooKeeperNet.Recipes.dll
+D:\repos\Hackathon-ZooKeeper\zookeeper\src\dotnet\ZooKeeperNet.Recipes\bin\Debug\ZooKeeperNet.Recipes.pdb
+D:\repos\Hackathon-ZooKeeper\zookeeper\src\dotnet\ZooKeeperNet.Recipes\bin\Debug\log4net.dll
+D:\repos\Hackathon-ZooKeeper\zookeeper\src\dotnet\ZooKeeperNet.Recipes\bin\Debug\ZooKeeperNet.dll
+D:\repos\Hackathon-ZooKeeper\zookeeper\src\dotnet\ZooKeeperNet.Recipes\bin\Debug\ZooKeeperNet.pdb
+D:\repos\Hackathon-ZooKeeper\zookeeper\src\dotnet\ZooKeeperNet.Recipes\bin\Debug\log4net.xml
+D:\repos\Hackathon-ZooKeeper\zookeeper\src\dotnet\ZooKeeperNet.Recipes\obj\Debug\ZooKeeperNet.Recipes.csprojResolveAssemblyReference.cache
+D:\repos\Hackathon-ZooKeeper\zookeeper\src\dotnet\ZooKeeperNet.Recipes\obj\Debug\ZooKeeperNet.Recipes.dll
+D:\repos\Hackathon-ZooKeeper\zookeeper\src\dotnet\ZooKeeperNet.Recipes\obj\Debug\ZooKeeperNet.Recipes.pdb

@@ -1,0 +1,17 @@
+D:\repos\Hackathon-ZooKeeper\zookeeper\src\dotnet\ZooKeeperConsole\bin\Release\ZooKeeperConsole.exe.config
+D:\repos\Hackathon-ZooKeeper\zookeeper\src\dotnet\ZooKeeperConsole\bin\Release\ZooKeeperConsole.exe
+D:\repos\Hackathon-ZooKeeper\zookeeper\src\dotnet\ZooKeeperConsole\bin\Release\ZooKeeperConsole.pdb
+D:\repos\Hackathon-ZooKeeper\zookeeper\src\dotnet\ZooKeeperConsole\bin\Release\ZooKeeperNet.dll
+D:\repos\Hackathon-ZooKeeper\zookeeper\src\dotnet\ZooKeeperConsole\bin\Release\ZooKeeperNet.Recipes.dll
+D:\repos\Hackathon-ZooKeeper\zookeeper\src\dotnet\ZooKeeperConsole\bin\Release\ZooKeeperNet.Tests.dll
+D:\repos\Hackathon-ZooKeeper\zookeeper\src\dotnet\ZooKeeperConsole\bin\Release\ZooKeeperNetRecipes.Tests.dll
+D:\repos\Hackathon-ZooKeeper\zookeeper\src\dotnet\ZooKeeperConsole\bin\Release\log4net.dll
+D:\repos\Hackathon-ZooKeeper\zookeeper\src\dotnet\ZooKeeperConsole\bin\Release\nunit.framework.dll
+D:\repos\Hackathon-ZooKeeper\zookeeper\src\dotnet\ZooKeeperConsole\bin\Release\ZooKeeperNetRecipes.Tests.pdb
+D:\repos\Hackathon-ZooKeeper\zookeeper\src\dotnet\ZooKeeperConsole\bin\Release\ZooKeeperNet.Recipes.pdb
+D:\repos\Hackathon-ZooKeeper\zookeeper\src\dotnet\ZooKeeperConsole\bin\Release\ZooKeeperNet.Tests.pdb
+D:\repos\Hackathon-ZooKeeper\zookeeper\src\dotnet\ZooKeeperConsole\bin\Release\ZooKeeperNet.pdb
+D:\repos\Hackathon-ZooKeeper\zookeeper\src\dotnet\ZooKeeperConsole\bin\Release\log4net.xml
+D:\repos\Hackathon-ZooKeeper\zookeeper\src\dotnet\ZooKeeperConsole\obj\Release\ZooKeeperConsole.csprojResolveAssemblyReference.cache
+D:\repos\Hackathon-ZooKeeper\zookeeper\src\dotnet\ZooKeeperConsole\obj\Release\ZooKeeperConsole.exe
+D:\repos\Hackathon-ZooKeeper\zookeeper\src\dotnet\ZooKeeperConsole\obj\Release\ZooKeeperConsole.pdb
