@@ -1,0 +1,9 @@
+D:\cszk\zookeeper\src\dotnet\ZooKeeperNet.Recipes\bin\Debug\ZooKeeperNet.Recipes.dll
+D:\cszk\zookeeper\src\dotnet\ZooKeeperNet.Recipes\bin\Debug\ZooKeeperNet.Recipes.pdb
+D:\cszk\zookeeper\src\dotnet\ZooKeeperNet.Recipes\bin\Debug\log4net.dll
+D:\cszk\zookeeper\src\dotnet\ZooKeeperNet.Recipes\bin\Debug\ZooKeeperNet.dll
+D:\cszk\zookeeper\src\dotnet\ZooKeeperNet.Recipes\bin\Debug\ZooKeeperNet.pdb
+D:\cszk\zookeeper\src\dotnet\ZooKeeperNet.Recipes\bin\Debug\log4net.xml
+D:\cszk\zookeeper\src\dotnet\ZooKeeperNet.Recipes\obj\Debug\ZooKeeperNet.Recipes.csprojResolveAssemblyReference.cache
+D:\cszk\zookeeper\src\dotnet\ZooKeeperNet.Recipes\obj\Debug\ZooKeeperNet.Recipes.dll
+D:\cszk\zookeeper\src\dotnet\ZooKeeperNet.Recipes\obj\Debug\ZooKeeperNet.Recipes.pdb

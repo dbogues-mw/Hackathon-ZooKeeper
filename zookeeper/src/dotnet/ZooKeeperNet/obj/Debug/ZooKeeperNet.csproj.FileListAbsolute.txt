@@ -1,0 +1,7 @@
+D:\cszk\zookeeper\src\dotnet\ZooKeeperNet\bin\Debug\ZooKeeperNet.dll
+D:\cszk\zookeeper\src\dotnet\ZooKeeperNet\bin\Debug\ZooKeeperNet.pdb
+D:\cszk\zookeeper\src\dotnet\ZooKeeperNet\bin\Debug\log4net.dll
+D:\cszk\zookeeper\src\dotnet\ZooKeeperNet\bin\Debug\log4net.xml
+D:\cszk\zookeeper\src\dotnet\ZooKeeperNet\obj\Debug\ZooKeeperNet.csprojResolveAssemblyReference.cache
+D:\cszk\zookeeper\src\dotnet\ZooKeeperNet\obj\Debug\ZooKeeperNet.dll
+D:\cszk\zookeeper\src\dotnet\ZooKeeperNet\obj\Debug\ZooKeeperNet.pdb

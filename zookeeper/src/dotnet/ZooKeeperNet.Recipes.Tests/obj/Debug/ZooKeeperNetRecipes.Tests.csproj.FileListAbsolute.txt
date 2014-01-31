@@ -1,0 +1,15 @@
+D:\cszk\zookeeper\src\dotnet\ZooKeeperNet.Recipes.Tests\bin\Debug\ZooKeeperNetRecipes.Tests.dll.config
+D:\cszk\zookeeper\src\dotnet\ZooKeeperNet.Recipes.Tests\bin\Debug\ZooKeeperNetRecipes.Tests.dll
+D:\cszk\zookeeper\src\dotnet\ZooKeeperNet.Recipes.Tests\bin\Debug\ZooKeeperNetRecipes.Tests.pdb
+D:\cszk\zookeeper\src\dotnet\ZooKeeperNet.Recipes.Tests\bin\Debug\log4net.dll
+D:\cszk\zookeeper\src\dotnet\ZooKeeperNet.Recipes.Tests\bin\Debug\nunit.framework.dll
+D:\cszk\zookeeper\src\dotnet\ZooKeeperNet.Recipes.Tests\bin\Debug\ZooKeeperNet.dll
+D:\cszk\zookeeper\src\dotnet\ZooKeeperNet.Recipes.Tests\bin\Debug\ZooKeeperNet.Recipes.dll
+D:\cszk\zookeeper\src\dotnet\ZooKeeperNet.Recipes.Tests\bin\Debug\ZooKeeperNet.Tests.dll
+D:\cszk\zookeeper\src\dotnet\ZooKeeperNet.Recipes.Tests\bin\Debug\ZooKeeperNet.Recipes.pdb
+D:\cszk\zookeeper\src\dotnet\ZooKeeperNet.Recipes.Tests\bin\Debug\ZooKeeperNet.Tests.pdb
+D:\cszk\zookeeper\src\dotnet\ZooKeeperNet.Recipes.Tests\bin\Debug\ZooKeeperNet.pdb
+D:\cszk\zookeeper\src\dotnet\ZooKeeperNet.Recipes.Tests\bin\Debug\log4net.xml
+D:\cszk\zookeeper\src\dotnet\ZooKeeperNet.Recipes.Tests\obj\Debug\ZooKeeperNetRecipes.Tests.csprojResolveAssemblyReference.cache
+D:\cszk\zookeeper\src\dotnet\ZooKeeperNet.Recipes.Tests\obj\Debug\ZooKeeperNetRecipes.Tests.dll
+D:\cszk\zookeeper\src\dotnet\ZooKeeperNet.Recipes.Tests\obj\Debug\ZooKeeperNetRecipes.Tests.pdb

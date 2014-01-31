@@ -1,0 +1,77 @@
+﻿// spawn up zoo keeper
+            IZooKeeper _zooKeeper = null;
+            IWatcher _watcher = null;
+
+            _watcher = new AbstractZooKeeperTests.CountdownWatcher();
+            //_zooKeeper = new ZooKeeper("127.0.0.1:2181", new TimeSpan(0, 0, 0, 10000), _watcher);
+            _zooKeeper = new ZooKeeper("127.0.0.1:2181", new TimeSpan(0, 0, 0, 10000), _watcher);
+
+
+            // Load Device Id
+            // todo - load from file
+            string _deviceId = "1234567890";
+
+
+            // Load Device Type
+            // todo - load from file
+            String _deviceType = "Verifone";
+
+
+            // Add node for this device
+            string devicePath = "/" + _deviceType + "_" + _deviceId;
+            _zooKeeper.Create(devicePath, null, Ids.OPEN_ACL_UNSAFE, CreateMode.EphemeralSequential);
+
+
+
+            // todo - this will be read from zookeeper at some point
+            /*
+            _zooKeeper.Create("/" + _deviceType, null, Ids.OPEN_ACL_UNSAFE, CreateMode.Persistent);
+            _zooKeeper.Create("/" + _deviceType + "/" + "firmwareVersion", Encoding.ASCII.GetBytes("v2.3"), Ids.OPEN_ACL_UNSAFE, CreateMode.Persistent);
+            _zooKeeper.Create("/" + _deviceType + "/" + "releaseYear", Encoding.ASCII.GetBytes("2006"), Ids.OPEN_ACL_UNSAFE, CreateMode.Persistent);
+            */
+             _zooKeeper.Create("/" + _deviceType + "/" + "manufacturer", Encoding.ASCII.GetBytes("Veri"), Ids.OPEN_ACL_UNSAFE, CreateMode.Persistent);
+            
+            //_zooKeeper.Create("/" + _deviceType + "/" + "deviceTypeCode", Encoding.ASCII.GetBytes("V"), Ids.OPEN_ACL_UNSAFE, CreateMode.Persistent);
+            
+            // Load Device Configuration
+            // todo: need to get list config from paddy
+            IWatcher _firmwareVersionWatcher = new AbstractZooKeeperTests.CountdownWatcher();
+
+            IWatcher watcher = new MyWatcher();
+
+            string _firmwareVersion = System.Text.Encoding.UTF8.GetString(_zooKeeper.GetData("/" + _deviceType + "/" + "firmwareVersion", false, null));
+            string _releaseYear = System.Text.Encoding.UTF8.GetString(_zooKeeper.GetData("/" + _deviceType + "/" + "releaseYear", false, null));
+            string _manufacturer = System.Text.Encoding.UTF8.GetString(_zooKeeper.GetData("/" + _deviceType + "/" + "manufacturer", watcher, null));
+            string _deviceTypeCode = System.Text.Encoding.UTF8.GetString(_zooKeeper.GetData("/" + _deviceType + "/" + "deviceTypeCode", false, null));
+
+
+            Console.WriteLine(_firmwareVersion);
+            Console.WriteLine(_releaseYear);
+            Console.WriteLine(_manufacturer);
+            Console.WriteLine(_deviceTypeCode);
+
+
+            // Add watch for Device Type Folder
+
+
+
+
+
+            // Add watch to commands
+
+
+            
+            /*
+            IWatcher watcher = new AbstractZooKeeperTests.CountdownWatcher();
+            IZooKeeper zooKeeper = new ZooKeeper("127.0.0.1:2181", new TimeSpan(0,0,0,10000), watcher);
+
+            var node = Guid.NewGuid();
+
+            
+
+            String z = "David";
+            byte[] saveData = Encoding.ASCII.GetBytes(z);
+            zooKeeper.Create("/VSNode", saveData, Ids.OPEN_ACL_UNSAFE, CreateMode.Persistent);
+
+            zooKeeper.Dispose();
+            */
